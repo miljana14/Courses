@@ -63,4 +63,14 @@ public class DeveloperCourse implements Serializable {
     public void setClassesPerWeek(Integer classesPerWeek) {
         this.classesPerWeek = classesPerWeek;
     }
+
+    @Override
+    public String toString() {
+        return "DeveloperCourse{" +
+                "id=" + id +
+                ", developerCourseName='" + developerCourseName + '\'' +
+                ", costPerClass=" + costPerClass +
+                ", classesPerWeek=" + classesPerWeek +
+                '}';
+    }
 }

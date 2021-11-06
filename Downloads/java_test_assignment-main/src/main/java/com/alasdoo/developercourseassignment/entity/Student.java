@@ -96,4 +96,17 @@ public class Student implements Serializable {
     public void setBankCardNumber(Integer bankCardNumber) {
         this.bankCardNumber = bankCardNumber;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", accountName='" + accountName + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", bankCardNumber=" + bankCardNumber +
+                '}';
+    }
 }

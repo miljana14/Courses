@@ -63,4 +63,14 @@ public class Teacher implements Serializable {
     public void setTeacherEmail(String teacherEmail) {
         this.teacherEmail = teacherEmail;
     }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "id=" + id +
+                ", teacherName='" + teacherName + '\'' +
+                ", teacherSurname='" + teacherSurname + '\'' +
+                ", teacherEmail='" + teacherEmail + '\'' +
+                '}';
+    }
 }

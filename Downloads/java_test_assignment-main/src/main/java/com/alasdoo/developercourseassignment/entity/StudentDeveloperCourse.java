@@ -63,4 +63,14 @@ public class StudentDeveloperCourse implements Serializable {
     public void setClassesBought(Integer classesBought) {
         this.classesBought = classesBought;
     }
+
+    @Override
+    public String toString() {
+        return "StudentDeveloperCourse{" +
+                "id=" + id +
+                ", studentId=" + studentId +
+                ", developerCourseId=" + developerCourseId +
+                ", classesBought=" + classesBought +
+                '}';
+    }
 }
