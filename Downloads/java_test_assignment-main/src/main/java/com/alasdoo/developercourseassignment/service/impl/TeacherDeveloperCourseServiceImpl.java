@@ -94,9 +94,6 @@ public class TeacherDeveloperCourseServiceImpl implements TeacherDeveloperCourse
 //                ("Teacher course with the following id = " + id + " is not found.");
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
-        if (teacherDeveloperCourseRepository.findByDeveloperCourseIdAndTeacherId(courseId, teacherId).isPresent()) {
-            throw new ResponseStatusException(HttpStatus.ALREADY_REPORTED);
-        }
         oldTeacherDeveloperCourse.get().setDeveloperCourseId(teacherDeveloperCourseDTO.getDeveloperCourseId());
         oldTeacherDeveloperCourse.get().setTeacherId(teacherDeveloperCourseDTO.getTeacherId());
         teacherDeveloperCourseRepository.save(oldTeacherDeveloperCourse.get());
