@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/add.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="container">
+        <div>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-between">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Contact List</a></li>
+                    <li class="nav-item"><a class="nav-link" href="add.html">Add Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost:8080/contacts/download/contacts.csv">Download CSV</a></li>
+                </ul>
+                <form class="form-inline mr-sm-2">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search" id="fieldKeyword">
+                        <div class="input-group-append">
+                            <button class="btn btn-info" type="button" id="buttonSearch">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </nav>
+        </div>
+        <br>
+    <div class="row justify-content-center">
+        <div class="col-sm-7" style="background-color:#0dcaf0; padding:10px; border-radius:3px">
+            <h2 class="text-center">Add new Contact</h2>
+            <form id="add_new_contact">
+                <div class="form-group">
+                    <label class="control-label" for="picture">Picture:</label>
+                    <input type="text" class="form-control" id="picture"
+                           placeholder="Enter Picture" name="picture" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="name">Name:</label>
+                    <input type="text" class="form-control" id="name"
+                           placeholder="Enter Name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="address">Address:</label>
+                    <input type="text" class="form-control" id="address"
+                           placeholder="Enter Address" name="address" required>
+                </div>
+                <br>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary" style="color:black; font-weight:bold;" id="btn-add-new-contact">Create</button>
+                </div>
+            </form>
+            <div id="response" style="display:none; margin-top:10px">
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+</div>
+</body>
+</html>
